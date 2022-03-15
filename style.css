@@ -195,3 +195,59 @@ footer {
 }
 
 /* footer end  */
+
+@media screen and (min-width: 40em) {
+
+  #github-header{
+    position: absolute;
+    top: -8rem;
+    right: -7.5rem;
+  }
+  #linkedin-header{
+    position: absolute;
+    top: -8rem;
+    right: -10rem;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  article {
+    width: 45%;
+  }
+
+  .project3{
+    margin-top: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 60em) {
+
+  #github-header{
+    position: absolute;
+    top: -8rem;
+    right: -27rem;
+  }
+  #linkedin-header{
+    position: absolute;
+    top: -8rem;
+    right: -29.5rem;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  article {
+    width: 30%;
+  }
+
+  .project3{
+    margin-top: 0;
+  }
+}

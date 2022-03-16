@@ -14,83 +14,87 @@
 <body>
   <header>
     <div class='header-container'>
-      <!-- <img src='' alt='' class='hero'> -->
-      <h1>Hi, I'm María</h1>
-      <p>Front-end developer from Cambridge</p>
       
-      <form action=''>
-        <input type='submit' id='submit' value='Contact me'>
-      </form>
-      <a href='https://github.com/yoyesu' target='_blank'><i class="fa-brands fa-github fa-2xl" id='github-header'></i></a>
-      <a href='https://www.linkedin.com/in/marialosafo/' target='_blank'><i class="fa-brands fa-linkedin fa-2xl" id='linkedin-header'></i></a>
+        <h1>Hi, I'm María</h1>
+        <p>Front-end developer from Cambridge</p>
+      
+        <form action=''>
+          <input type='submit' id='submit' value='Contact me'>
+        </form>
+
+      <div class='icon-container'>
+        <a href='https://github.com/yoyesu' target='_blank'><i class="fa-brands fa-github fa-2xl" id='github-header'></i></a>
+        <a href='https://www.linkedin.com/in/marialosafo/' target='_blank'><i class="fa-brands fa-linkedin fa-2xl" id='linkedin-header'></i></a>
+      </div>
     </div>
   </header>
   <main>
     <section class='about-me'>
       <h2>About me</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore, provident numquam minus quia praesentium omnis doloribus adipisci laborum maiores voluptatibus dignissimos dicta earum amet eligendi cumque. Rem, nesciunt deserunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore, provident numquam minus quia praesentium omnis doloribus adipisci laborum maiores voluptatibus dignissimos dicta earum amet eligendi cumque. Rem, nesciunt deserunt.</p>
     </section>
 
     <section class='portfolio'>
       <h2>Portfolio</h2>
 
-      <article>
-        <div class='image-container'>
-          <img src='' alt=''>
-        </div>
-        <div class='text-container'>
-          <h3>Project 1</h3>
-          <ul>
-            <li>Live Website Link:</li>
-            <li>GitHub Link:</li>
-            <li>Technologies used:</li>
-            <li>Summary:</li>
-          </ul>
-        </div>
-      </article>
-
-      <article>
-        <div class='image-container'>
-          <img src='' alt=''>
-        </div>
-        <div class='text-container'>
-          <h3>Project 2</h3>
-          <ul>
-            <li>Live Website Link:</li>
-            <li>GitHub Link:</li>
-            <li>Technologies used:</li>
-            <li>Summary:</li>
-          </ul>
-        </div>
-      </article>
-
-      <article>
-        <div class='image-container'>
-          <img src='' alt=''>
-        </div>
-        <div class='text-container'>
-          <h3>Project 3</h3>
-          <ul>
-            <li>Live Website Link:</li>
-            <li>GitHub Link:</li>
-            <li>Technologies used:</li>
-            <li>Summary:</li>
-          </ul>
-        </div>
-      </article>
-
+      <div class='cards-container'>
+        <article class='project1'>
+          <div class='image-container'>
+            <img src='' alt=''>
+          </div>
+          <div class='text-container'>
+            <h3>Project 1</h3>
+            <ul>
+              <li>Live Website Link:</li>
+              <li>GitHub Link:</li>
+              <li>Technologies used:</li>
+              <li>Summary:</li>
+            </ul>
+          </div>
+        </article>
+        <article class='project2'>
+          <div class='image-container'>
+            <img src='' alt=''>
+          </div>
+          <div class='text-container'>
+            <h3>Project 2</h3>
+            <ul>
+              <li>Live Website Link:</li>
+              <li>GitHub Link:</li>
+              <li>Technologies used:</li>
+              <li>Summary:</li>
+            </ul>
+          </div>
+        </article>
+        <article class='project3'>
+          <div class='image-container'>
+            <img src='' alt=''>
+          </div>
+          <div class='text-container'>
+            <h3>Project 3</h3>
+            <ul>
+              <li>Live Website Link:</li>
+              <li>GitHub Link:</li>
+              <li>Technologies used:</li>
+              <li>Summary:</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class='contact'>
       <h2>Get in touch</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tenetur sunt voluptas aliquid consectetur est fuga similique aspernatur nihil consequatur quis qui, earum officiis id, cum dicta sit, quod veritatis?</p>
-    
+      <p id='contact-big-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tenetur sunt voluptas aliquid consectetur est fuga similique aspernatur nihil consequatur quis qui, earum officiis id, cum dicta sit, quod veritatis?</p>
+      
+      <div class='icon-wrapper'>
       <a href='https://github.com/yoyesu' target='_blank'><i class="fa-brands fa-github fa-2xl" id='github-contact'><p id='github-text'>María López</p></i></a>
       <a href='https://www.linkedin.com/in/marialosafo/' target='_blank'><i class="fa-brands fa-linkedin fa-2xl" id='linkedin-contact'><p id='linkedin-text'>María López</p></i></a>
+      </div>
       
 
       <form action='' id='contactform'>
-        <h2>Send a message</h2>
+        <h2 id='send-message'>Send a message</h2>
 
         <label for="name">First name</label>
         <input type='text' id='name' name='name' maxlength='60' required>

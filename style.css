@@ -207,64 +207,32 @@ header nav ul li{
       display: flex;
       align-items: center;
       text-align: center;
-      
     }
 
     #center{
-      background-color: aqua;
       margin: 0 auto;
     }
 
 /*footer section end*/
 
 
-/* @media screen and (min-width: 40em) {
-
-  #github-header{
-    position: absolute;
-    top: -18rem;
-    right: -7.5rem;
-  }
-  #linkedin-header{
-    position: absolute;
-    top: -18rem;
-    right: -10rem;
-  }
+@media screen and (min-width: 40em) {
   
-  .cards-container {
+  .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1rem;
   }
 
-  article {
-    width: 45%;
-  }
-
-  .project3{
-    margin-top: 2rem;
+  .portfolio-card {
+    width: 47%;
+    padding-bottom: 2rem;
   }
 
 }
 
 @media screen and (min-width: 60em) {
 
-  h1{
-    font-size: 60px;
-  }
-  h2{
-    font-size: 40px;
-  }
-  #github-header{
-    position: absolute;
-    top: -18rem;
-    right: -17rem;
-  }
-  #linkedin-header{
-    position: absolute;
-    top: -18rem;
-    right: -19.5rem;
-  }
 
   .about-me {
     display: flex;
@@ -273,47 +241,34 @@ header nav ul li{
     padding: 3rem 20rem;
   }
   
-  .cards-container {
+  .card-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  article {
-    width: 30%;
-    height: 30rem;
-  }
-
-  .text-container{
-    padding: 0 2rem;
-  }
-
-  .text-container li {
-    margin-bottom: 1rem;
-  }
-
-  .project3{
-    margin-top: 0;
+  .portfolio-card {
+    width: 31%;
+    padding-bottom: 2rem;
   }
   
   #send-message, #contact-big-text{
     display: none;
   }
 
-  form{
-    width: 45%;
-    position: relative;
+  .contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  #github-contact{
-    position: absolute;
-    bottom: -66rem;
-    left: 59rem;
+  .contact .icon-wrapper{
+    width: 50%;
+    align-items:flex-end;
   }
-  
-  #linkedin-contact{
-    position: absolute;
-    bottom: -62.5rem;
-    left: 59rem;
-    
-  } */
+
+  form {
+    width: 45%;
+  }
+
 }

@@ -12,89 +12,85 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class='header-container'>
+  <header class='hero'>
+    <nav>
+      <ul>
+        <li><a href='https://github.com/yoyesu' target='_blank'><i class="fa-brands fa-github fa-2xl" id='github-header'></i></a></li>
+        <li><a href='https://www.linkedin.com/in/marialosafo/' target='_blank'><i class="fa-brands fa-linkedin fa-2xl" id='linkedin-header'></i></a></li>
+      </ul>
+    </nav>
+    
+    <section class='hero-info'>
+      <h1 class='section-title' id='hero-title'>Hi, I'm María</h1>
+      <p class='hero-desc'><span>Front-end developer</span> from Cambridge.</p>
       
-        <h1>Hi, I'm María</h1>
-        <p>Front-end developer from Cambridge</p>
-      
-        <form action=''>
-          <input type='submit' id='submit' value='Contact me'>
-        </form>
-
-      <div class='icon-container'>
-        <a href='https://github.com/yoyesu' target='_blank'><i class="fa-brands fa-github fa-2xl" id='github-header'></i></a>
-        <a href='https://www.linkedin.com/in/marialosafo/' target='_blank'><i class="fa-brands fa-linkedin fa-2xl" id='linkedin-header'></i></a>
-      </div>
-    </div>
+      <button class='hero-btn'>Contact me</button>
+    </section>
   </header>
   <main>
+<!--about me section start-->
     <section class='about-me'>
-      <h2>About me</h2>
+      <h2 class='section-title'>About me</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur inventore, provident numquam minus quia praesentium omnis doloribus adipisci laborum maiores voluptatibus dignissimos dicta earum amet eligendi cumque. Rem, nesciunt deserunt.</p>
     </section>
+<!--about me section end-->
 
+<!--portfolio start-->
     <section class='portfolio'>
-      <h2>Portfolio</h2>
+      <h2 class='section-title'>Portfolio</h2>
 
-      <div class='cards-container'>
-        <article class='project1'>
-          <div class='image-container'>
-            <img src='' alt=''>
-          </div>
-          <div class='text-container'>
+      <article class='portfolio-card'>
+        <img class='portfolio-img' id='portfolio-img1' src='img/tbc.jpg' alt=''>
+          <section class='portfolio-info'>
             <h3>Project 1</h3>
             <ul>
-              <li>Live Website Link:</li>
-              <li>GitHub Link:</li>
-              <li>Technologies used:</li>
-              <li>Summary:</li>
+              <li>Live Website Link: <a href='' target='_blank'>Link</a></li>
+              <li>GitHub Link: <a href='' target='_blank'>Link</a></li>
+              <li>Technologies used: HTML, CSS... </li>
+              <li>Summary: This is a summary of project 1.</li>
             </ul>
-          </div>
-        </article>
-        <article class='project2'>
-          <div class='image-container'>
-            <img src='' alt=''>
-          </div>
-          <div class='text-container'>
-            <h3>Project 2</h3>
+          </section>
+      </article>
+      <article class='portfolio-card'>
+        <img class='portfolio-img' id='portfolio-img2' src='img/tbc.jpg' alt=''>
+          <section class='portfolio-info'>
+            <h3>Project 1</h3>
             <ul>
-              <li>Live Website Link:</li>
-              <li>GitHub Link:</li>
-              <li>Technologies used:</li>
-              <li>Summary:</li>
+              <li>Live Website Link: <a href='' target='_blank'>Link</a></li>
+              <li>GitHub Link: <a href='' target='_blank'>Link</a></li>
+              <li>Technologies used: HTML, CSS... </li>
+              <li>Summary: This is a summary of project 2.</li>
             </ul>
-          </div>
-        </article>
-        <article class='project3'>
-          <div class='image-container'>
-            <img src='' alt=''>
-          </div>
-          <div class='text-container'>
-            <h3>Project 3</h3>
+          </section>
+      </article>
+      <article class='portfolio-card'>
+        <img class='portfolio-img' id='portfolio-img3' src='img/tbc.jpg' alt=''>
+          <section class='portfolio-info'>
+            <h3>Project 1</h3>
             <ul>
-              <li>Live Website Link:</li>
-              <li>GitHub Link:</li>
-              <li>Technologies used:</li>
-              <li>Summary:</li>
+              <li>Live Website Link: <a href='' target='_blank'>Link</a></li>
+              <li>GitHub Link: <a href='' target='_blank'>Link</a></li>
+              <li>Technologies used: HTML, CSS... </li>
+              <li>Summary: This is a summary of project 3.</li>
             </ul>
-          </div>
-        </article>
-      </div>
+          </section>
+      </article>
     </section>
+<!--portfolio end-->
 
+<!--contact start-->
     <section class='contact'>
-      <h2>Get in touch</h2>
+      <h2 class='section-title'>Get in touch</h2>
       <p id='contact-big-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tenetur sunt voluptas aliquid consectetur est fuga similique aspernatur nihil consequatur quis qui, earum officiis id, cum dicta sit, quod veritatis?</p>
       
-      <div class='icon-wrapper'>
-      <a href='https://github.com/yoyesu' target='_blank'><i class="fa-brands fa-github fa-2xl" id='github-contact'><p id='github-text'>María López</p></i></a>
-      <a href='https://www.linkedin.com/in/marialosafo/' target='_blank'><i class="fa-brands fa-linkedin fa-2xl" id='linkedin-contact'><p id='linkedin-text'>María López</p></i></a>
-      </div>
+      <section class='icon-wrapper'>
+      <a href='https://github.com/yoyesu' target='_blank'><i class="fa-brands fa-github fa-2xl contact-icons" id='github-contact'><p id='github-text'>María López</p></i></a>
+      <a href='https://www.linkedin.com/in/marialosafo/' target='_blank'><i class="fa-brands fa-linkedin fa-2xl contact-icons" id='linkedin-contact'><p id='linkedin-text'>María López</p></i></a>
+      </section>
       
 
       <form action='' id='contactform'>
-        <h2 id='send-message'>Send a message</h2>
+        <h2 class='section-title' id='send-message'>Send a message</h2>
 
         <label for="name">First name</label>
         <input type='text' id='name' name='name' maxlength='60' required>
@@ -113,9 +109,10 @@
         <input type='submit' id='submit' value='Send a message'>
       </form>
     </section>
+<!--contact end-->
   </main>
   <footer>
-    <p>Copyright María's Blogs</p>
+    <p id='center'>Copyright María's Blogs</p>
   </footer>
 </body>
 </html>

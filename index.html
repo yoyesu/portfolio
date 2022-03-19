@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--hero start-->
   <header class='hero'>
     <nav>
       <ul>
@@ -22,11 +23,13 @@
     
     <section class='hero-info'>
       <h1 class='section-title' id='hero-title'>Hi, I'm María</h1>
-      <p class='hero-desc'><span>Front-end developer</span> from Cambridge.</p>
+      <p class='hero-desc'><span id='blue-hero-text'>Front-end developer</span> from Cambridge. <span id='block-text'>Welcome to my portfolio.</span></p>
       
       <button class='hero-btn'>Contact me</button>
     </section>
   </header>
+<!--hero end-->
+
   <main>
 <!--about me section start-->
     <section class='about-me'>
@@ -37,7 +40,7 @@
 
 <!--portfolio start-->
     <section class='portfolio'>
-      <h2 class='section-title'>Portfolio</h2>
+      <h2 class='section-title' id='portfolio-title'>Portfolio</h2>
 
       <section class='card-container'>
         <article class='portfolio-card'>
@@ -45,10 +48,10 @@
           <section class='portfolio-info'>
             <h3>Project 1</h3>
             <ul>
-              <li>Live Website Link: <a href='' target='_blank'>Link</a></li>
-              <li>GitHub Link: <a href='' target='_blank'>Link</a></li>
-              <li>Technologies used: HTML, CSS... </li>
-              <li>Summary: This is a summary of project 1.</li>
+              <li><span class='bold-text-cards'>Live Website Link:</span> <a href='' target='_blank'>Link</a></li>
+              <li><span class='bold-text-cards'>GitHub Link:</span> <a href='' target='_blank'>Link</a></li>
+              <li><span class='bold-text-cards'>Technologies used:</span> HTML, CSS... </li>
+              <li><span class='bold-text-cards'>Summary:</span> This is a summary of project 1.</li>
             </ul>
           </section>
         </article>
@@ -57,10 +60,10 @@
             <section class='portfolio-info'>
               <h3>Project 2</h3>
               <ul>
-                <li>Live Website Link: <a href='' target='_blank'>Link</a></li>
-                <li>GitHub Link: <a href='' target='_blank'>Link</a></li>
-                <li>Technologies used: HTML, CSS...   </li>
-                <li>Summary: This is a summary of project 2.</li>
+                <li><span class='bold-text-cards'>Live Website Link:</span> <a href='' target='_blank'>Link</a></li>
+                <li><span class='bold-text-cards'>GitHub Link:</span> <a href='' target='_blank'>Link</a></li>
+                <li><span class='bold-text-cards'>Technologies used:</span> HTML, CSS... </li>
+                <li><span class='bold-text-cards'>Summary:</span> This is a summary of project 2.</li>
               </ul>
             </section>
         </article>
@@ -69,10 +72,10 @@
             <section class='portfolio-info'>
               <h3>Project 3</h3>
               <ul>
-                <li>Live Website Link: <a href='' target='_blank'>Link</a></li>
-                <li>GitHub Link: <a href='' target='_blank'>Link</a></li>
-                <li>Technologies used: HTML, CSS...   </li>
-                <li>Summary: This is a summary of project 3.</li>
+                <li><span class='bold-text-cards'>Live Website Link:</span> <a href='' target='_blank'>Link</a></li>
+                <li><span class='bold-text-cards'>GitHub Link:</span> <a href='' target='_blank'>Link</a></li>
+                <li><span class='bold-text-cards'>Technologies used:</span> HTML, CSS... </li>
+                <li><span class='bold-text-cards'>Summary:</span> This is a summary of project 3.</li>
               </ul>
             </section>
         </article>
@@ -103,7 +106,7 @@
         <input type='text' id='email' name='email' placeholder='youremail@gmail.com' required>
 
         <label for="message">Message</label>
-        <textarea id='message' name='message' rows="6" cols="30" required></textarea>
+        <textarea id='message' name='message' rows="6" cols="30" placeholder='Your message goes here.' required></textarea>
 
         <label for="submit"></label>
         <br>

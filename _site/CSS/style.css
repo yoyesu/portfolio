@@ -1,0 +1,316 @@
+/* CSS reset start */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* reset end */
+
+/*styling that applies to more than one section: start*/
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.portfolio, .contact, .about-me{
+  padding: 2rem 2rem;
+}
+
+#portfolio-title, #in-touch-title, #send-message{
+  color: white;
+}
+.section-title{
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color:#FBF8F1;
+}
+
+a:visited{
+  color:#6DC1C1;
+  text-shadow: 1px 1px 1px rgb(29, 25, 25);
+}
+
+main{
+  background-color: #1B1A18;
+}
+/*styling that applies to more than one section: end*/
+
+
+
+/*hero section start*/
+
+header{
+  background-image: url(/img/hero2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  padding: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+header nav ul li{
+  display: inline;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hero-info{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+.hero-desc{
+  text-shadow: 1px 1px 1px rgb(29, 25, 25);
+}
+
+#block-text{
+  display: block;
+  text-align: center;
+}
+
+#blue-hero-text{
+  color:#6DC1C1;
+  text-transform: capitalize;
+}
+
+#hero-title{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 10px rgb(29, 25, 25);
+}
+
+.hero-btn{
+  padding: 0.6rem;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgb(29, 25, 25);
+  background-color: #FEC447;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  background-color: #6DC1C1;
+}
+
+/*hero section end*/
+
+
+/*about me section start*/
+
+.about-me{
+  background-color: #FBF8F1;
+}
+
+/*about me section end*/
+
+
+/*portfolio section start*/
+
+.portfolio-card {
+  height: fit-content;
+  min-height: 40rem;
+  background-color: #FEC447;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-img {
+  background-color: white;
+  width: 100%;
+  height: 50%;
+}
+
+.portfolio-info{
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.portfolio-info h3{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.bold-text-cards{
+  font-weight: bold;
+}
+
+/*portfolio section end*/
+
+
+/*contact section start*/
+
+.contact{
+  color: white;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas: 
+  'one'
+  'two'
+  'three';
+}
+.contact:nth-child(1){
+  grid-area: one;
+}
+.contact:nth-child(2){
+  grid-area: two;
+}
+.contact:nth-child(3){
+  grid-area: three;
+}
+
+.icon-wrapper{
+}
+
+#github-text{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  margin-left: 3rem;
+}
+
+#linkedin-text{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  margin-left: 3rem;
+}
+
+  /*form start*/
+    
+    #contactform {
+      
+    }
+
+    #contactform h2 {
+    }
+    #contactform input, textarea{
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    textarea{
+      resize:vertical;
+    }
+
+    #contactform input[type='submit'] {
+      background-color: #FEC447;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      margin: 1rem 0;
+      cursor: pointer;
+    }
+
+    #contactform input[type='submit']:hover{
+      background-color: #6DC1C1;
+    }
+  /*form ends*/
+/*contact section end*/
+
+
+/*footer section start*/
+    footer{
+      background-color: #FBF8F1;
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    #center{
+      margin: 0 auto;
+    }
+
+/*footer section end*/
+
+
+@media screen and (min-width: 40em) {
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .portfolio-card {
+    width: 47%;
+    padding-bottom: 2rem;
+  }
+  .contact {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-areas: 
+    'one two two'
+    'three three three'; */
+  }
+  form{
+    grid-column: 1 / span 2;
+    width: 100%;
+  }
+  .icon-wrapper{
+    grid-row: 2;
+    grid-column: 3;
+  }
+}
+
+@media screen and (min-width: 60em) {
+
+
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    padding: 3rem 20rem;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-card {
+    width: 31%;
+    padding-bottom: 2rem;
+  }
+  
+  #send-message, #contact-big-text{
+    display: none;
+  }
+
+  .contact{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    
+  }
+
+  .contact .icon-wrapper{
+    width: 50%;
+    /* align-items:flex-end; */
+  }
+
+  form {
+    width: 45%;
+  }
+
+}

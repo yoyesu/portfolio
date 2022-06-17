@@ -16,7 +16,7 @@ title: "Maria's Portfolio: Front-End Development"
     <h1 class='section-title' id='hero-title'>Hi, I'm María</h1>
     <p class='hero-desc'><span id='blue-hero-text'>Front-end developer</span> from Cambridge. <span id='block-text'>Welcome to my portfolio.</span></p>
     
-    <button class='hero-btn' onclick="window.open('mailto:maria.losafo@gmail.com');">Contact me</button>
+    <a class='hero-btn' href="#contactform">Contact me</a>
   </section>
 </header>
 <!--hero end-->
@@ -46,7 +46,7 @@ title: "Maria's Portfolio: Front-End Development"
       <a href='https://www.linkedin.com/in/marialosafo/' target='_blank'><i class="fa-brands fa-linkedin fa-2xl contact-icons" id='linkedin-contact'><p id='linkedin-text'>María López</p></i></a>
     </section>
 
-    <form action='' id='contactform'>
+    <form action="https://formsubmit.co/4a057997f4f1e6c656bfa9abb6f844fa" method="POST" id='contactform'>
       <h2 class='section-title' id='send-message'>Send a message</h2>
 
       <label for="name">First name</label>
@@ -61,6 +61,7 @@ title: "Maria's Portfolio: Front-End Development"
       <label for="message">Message</label>
       <textarea id='message' name='message' rows="6" cols="30" placeholder='Your message goes here.' required></textarea>
 
+      <p class='hidden' id='submitted-message'>Form submitted successfully!</p>
       <label for="submit"></label>
       <br>
       <input type='submit' id='submit' value='Send a message'>
@@ -71,3 +72,5 @@ title: "Maria's Portfolio: Front-End Development"
 <footer>
   <p id='center'>&copy; 2022 María's Blogs</p>
 </footer>
+
+<script src="/app.js"></script>

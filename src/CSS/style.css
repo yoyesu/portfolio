@@ -46,6 +46,9 @@ a:visited{
 main{
   background-color: #1B1A18;
 }
+.hidden{
+  display: none;
+}
 /*styling that applies to more than one section: end*/
 
 
